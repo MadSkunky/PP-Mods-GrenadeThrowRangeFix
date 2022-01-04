@@ -34,7 +34,9 @@ namespace MadSkunky.GrenadeThrowRangeFix
                 {
                     float num = __instance.TacticalActor.CharacterStats.Endurance * __instance.TacticalActor.TacticalActorDef.EnduranceToThrowMultiplier;
                     float num2 = __instance.TacticalActor.CharacterStats.BonusAttackRange.CalcModValueBasedOn(num);
+                    // MadSkunky: adding range multiplier and divisor
                     num = num * __instance.GetDamagePayload().Range / Config.ThrowRangeDivisor;
+                    // End of changes, the rest is vanilla code
                     __result = num / (float)__instance.Weight * rangeMultiplier + num2;
                     return false;
                 }

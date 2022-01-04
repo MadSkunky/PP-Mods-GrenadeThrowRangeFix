@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
 // die einer Assembly zugeordnet sind.
 [assembly: AssemblyTitle("GrenadeThrowRangeFix")]
-[assembly: AssemblyDescription("First DLL Mod")]
+[assembly: AssemblyDescription("Fixes throwing range calculation for grenades")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("MadSkunky")]
 [assembly: AssemblyProduct("GrenadeThrowRangeFix")]
