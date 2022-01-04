@@ -3,7 +3,7 @@ This mod fixes the calculation of the throw range of grenades.
 
 ## Description
 The original method to calculate the throwing range doesn't take the defined ranges for hand thrown grenades into account.
-This value is also shown to the player as 'Range' in the stats overview of grenades and is set 16 for the PX Odin and Heal grenade and 12 for alomst any other.
+This value is also shown to the player as 'Range' in the stats overview of grenades and is set to 16 for the PX Odin and Heal grenade and 12 for alomst any other.
 
 The vanilla calculation is:
 
@@ -18,12 +18,12 @@ This means that any grenade has always the same range regardless of its shown ra
 
 This mod changes the calculation to:
 
-`(Endurance * EnduranceToThrowMultiplier * GrenadeRange / Divisor) / GrenadeWeight * RangeMultiplier + BonusAttackRange`
+`(Endurance * EnduranceToThrowMultiplier * GrenadeRange / ThrowRangeDivisor) / GrenadeWeight * RangeMultiplier + BonusAttackRange`
 - `GrenadeRange` is the value from the grenade definitions under DamagePayload.Range
-- `Divisor` is a configurable value, see "Config" tab in Modnix, default set to 12 what means that with 20 strength you get the throw range in tiles shown in the grenade stats.
+- `ThrowRangeDivisor` is a configurable value, see "Config" tab in Modnix, default set to 12 what means that with 20 strength you get the throw range in tiles shown in the grenade stats.
 
 This mod is mainly a helper for other modders that want to tweak the throwing range of the grenades in this game.
-The vanilla ranges are 16 for the PX Odin and Heal grenade and 12 for almost any other grenade, so be aware that the Odin and Heal grenade gets a significant buff with this mod from 12 up to 16 tiles range with 20 strength.
+The vanilla ranges are 16 for the PX Odin and Heal grenade and 12 for almost any other grenade, so be aware that the Odin and Heal grenade get a significant buff with this mod from 12 up to 16 tiles range with 20 strength.
 
 ## Installation and Configuration
 Download .7z, open Modnix 3+, click "Add Mod", select .7z, open "Config-Tab", configure, save, run game.
