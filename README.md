@@ -19,7 +19,7 @@ This means that any grenade has always the same range regardless of its shown ra
 This mod changes the calculation to:
 
 `(Endurance * EnduranceToThrowMultiplier * GrenadeRange / Divisor) / GrenadeWeight * RangeMultiplier + BonusAttackRange`
-- `GrenadeRange` the value from grenade defintions under DamagePayload.Range
+- `GrenadeRange` is the value from the grenade defintions under DamagePayload.Range
 - `Divisor` a configuable value, see "Config" tab in Modnix, default set to 12 what means that with 20 strength you get the throw range shown in the grenade stats.
 
 This mod is mainly a hleper for other modders that want to tweak the throwing range of the grenades in this game.
